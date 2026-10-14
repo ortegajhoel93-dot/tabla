@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos.css">
+    <title>Tablas2</title>
+</head>
+<body>
+
+    <!--contenedor main-->
+    <main>
+        <!--cabecera de la pagina web-->
+        <header>
+            <h1>Tabla de ventas</h1>
+            <p>Resumen de productos y ventas del primer trimestre</p>
+        </header>
+        <!--creamos la tabla-->
+        <div class="tabla-contenedor" role="region" aria-label="Tabla de ventas con desplazamiento horizontal" tabindex="0">
+            <table>
+                <caption>Ventas en enero a marzo - valores USD</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2" scope="col">Categroria</th>
+                        <th rowspan="2" scope="col">N°</th>
+                        <th rowspan="2" scope="col">Imagen</th>
+                        <th rowspan="2" scope="col">Producto</th>
+                        <th rowspan="2" scope="col">Descripción</th>
+                        <th colspan="3" scope="colgroup">Ventas mensuales por unidades</th>
+                        <th rowspan="2" scope="col">Total unidades</th>
+                        <th rowspan="2" scope="col">Precio unitario</th>
+                        <th rowspan="2" scope="col">Total ventas</th>
+
+                    </tr>
+
+                    <tr>
+                        <th scope="col">Enero</th>
+                        <th scope="col">Febreo</th>
+                        <th scope="col">Marzo</th>
+                    </tr>
+
+                </thead><!--fin cabecera tabla-->
+                <!--inicio del cuerpo de la tabla-->
+
+                <tbody>
+                    <tr>
+                        <th rowspan="2" scope="rowgroup" class="categoria">Computadoras y Accesorios<small>2 Productos</small></th>
+                        <td class="numero">1 </td>
+                        <td>
+                            <img src="../img/lenovo.jpg" class="imagen producto" alt="laptop" width="64px" height="64px">
+                        </td>
+                        <th colspan="row" class="producto">Laptop</th>
+                        <td class="descripcion">Procesador Corei5, 8GB de RAM y SSD 512 </td>
+                        <td class="numero">10</td>
+                        <td class="numero">12</td>
+                        <td class="numero">8</td>
+                        <td class="numero">30</td>
+                        <td class="dinero">$650.00</td>
+                        <td class="dinero total-ventas">$19.500.00</td>
+                    </tr>
+
+                      <tr>
+                        <td class="numero">2</td>
+                        <td>
+                            <img src="../img/mouseinalambrico.png" class="imagen producto" alt="PC escritotio" width="64px" height="64px">
+                        </td>
+                        <th colspan="row" class="producto">Mouse</th>
+                        <td class="descripcion">Mouse Inalambrico con conexion a USB</td>
+                        <td class="numero">20</td>
+                        <td class="numero">15</td>
+                        <td class="numero">8</td>
+                        <td class="numero">60</td>
+                        <td class="dinero">$15.00</td>
+                        <td class="dinero total-ventas">$900.00</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div><!--Fin contenedor tabla-->
+        <!--Parrafo para indicarle que es adaptable -->
+        <p class="nota">
+            En pantallas pequeñas, desliza la tabla horizontalmente para consultar todas las columnas
+        </p>
+        <!--boton inicio-->
+        <a class="enlace-home" href="../index.html">volver a home tabla 1</a>
+
+
+    </main>
+
+</body>
+</html>
